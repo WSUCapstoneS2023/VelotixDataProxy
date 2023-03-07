@@ -8,3 +8,7 @@ edition = "2021"
 [dependencies]
 mysql = "*"
 rusqlite = { version = "0.28.0", features = ["bundled"] }
+
+[dependencies.druid]
+druid = "0.8.3"
+features = ["im", "svg", "image"]
