@@ -20,16 +20,6 @@ fn main() -> Result<()> {
     // Open a connection to a new or existing SQLite database file
     let conn = set_conn((&"example.db").to_string())?;
 
-    // describe the main window
-    /*let main_window = WindowDesc::new(build_root(conn))
-    .title("SQL Test")
-    .window_size((400.0, 400.0));
-
-    // start the application
-    AppLauncher::with_window(main_window)
-        .launch(())
-        .expect("Failed to launch application");*/
-
     conn.execute(
         "CREATE TABLE IF NOT EXISTS users (
                   id              INTEGER PRIMARY KEY,
@@ -100,6 +90,16 @@ fn main() -> Result<()> {
         println!("Found person {:?}", person.unwrap());
     }
 
+    // describe the main window
+    let main_window = WindowDesc::new(build_root())
+    .title("SQL Test")
+    .window_size((400.0, 400.0));
+
+    // start the application
+    AppLauncher::with_window(main_window)
+        .launch(())
+        .expect("Failed to launch application");
+
     conn.execute("DELETE FROM users", [])?;
 
     Ok(())
@@ -115,7 +115,7 @@ fn set_conn(database: String) ->  Result<Connection>
     Ok(conn)
 }
 
-fn build_root(conn: Connection) -> impl Widget<()>
+fn build_root() -> impl Widget<()>
 {
     Flex::column()
         // Add a button widget to the Flex widget
