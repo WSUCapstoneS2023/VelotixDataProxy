@@ -1,9 +1,13 @@
+// read input
+use std::io;
+
 // sql
+use rusqlite::NO_PARAMS;
 use rusqlite::{params, Connection, Result};
 
 // display
 use druid::widget::{Align, Flex, Label, TextBox, Button};
-use druid::{AppLauncher, Data, Env, Lens, LocalizedString, Widget, WindowDesc, WidgetExt};
+use druid::{AppLauncher, Data, Env, Lens, LocalizedString, Widget, WindowDesc};
 
 #[derive(Debug)]
 struct User {
@@ -16,7 +20,16 @@ fn main() -> Result<()> {
     // Open a connection to a new or existing SQLite database file
     let conn = set_conn((&"example.db").to_string())?;
 
-    // Create a new table named `users`
+    // describe the main window
+    /*let main_window = WindowDesc::new(build_root(conn))
+    .title("SQL Test")
+    .window_size((400.0, 400.0));
+
+    // start the application
+    AppLauncher::with_window(main_window)
+        .launch(())
+        .expect("Failed to launch application");*/
+
     conn.execute(
         "CREATE TABLE IF NOT EXISTS users (
                   id              INTEGER PRIMARY KEY,
@@ -24,20 +37,55 @@ fn main() -> Result<()> {
                   email           TEXT NOT NULL
                   );",
         [],
-    )?;
+    );
 
-    let me = User {
-        id: 0,
-        name: "Derek".to_string(),
-        email: "Sadler_Derek@comcast.net".to_string(),
-    };
+    let mut run = true;
+    while run
+    {
+        println!("Enter an id:");
+        let mut id = String::new();
+        io::stdin().read_line(&mut id).expect("failed to read line");
+        let id = id.trim().parse::<i32>().expect("Invalid input");
+        println!("You entered: {}", id);
+    
+        // Create a new table named `users`
+        println!("Enter a name:");
+        let mut name = String::new();
+        io::stdin().read_line(&mut name).expect("failed to readline");
+        print!("You entered {}", name);
+    
+        println!("Enter a email:");
+        let mut email = String::new();
+        io::stdin().read_line(&mut email).expect("failed to readline");
+        print!("You entered {}", email);
+    
+        let me = User {
+            id: id,
+            name: (&name[..name.len()-2]).to_string(),
+            email: (&email[..email.len()-2]).to_string(),
+        };
+    
+        conn.execute(
+            "
+            INSERT OR IGNORE INTO users (id, name, email) 
+            VALUES (?1, ?2, ?3)", 
+            (&me.id, &me.name, &me.email)
+        )?;
 
-    conn.execute(
-        "
-        INSERT OR IGNORE INTO users (id, name, email) 
-        VALUES (?1, ?2, ?3)", 
-        (&me.id, &me.name, &me.email)
-    )?;
+        let mut input = String::new();
+        println!("Enter if you want to keep adding names (enter false to stop)");
+        io::stdin().read_line(&mut input).expect("failed to readline");
+        
+        if input.trim() == "false"
+        {
+            run = false;
+        }
+        else if input.trim() != "true"
+        {
+            println!("error invalid input");
+        }
+    }
+    
 
     let mut stmt = conn.prepare("SELECT id, name, email FROM users")?;
     let person_iter = stmt.query_map([], |row| {
@@ -52,18 +100,7 @@ fn main() -> Result<()> {
         println!("Found person {:?}", person.unwrap());
     }
 
-
-    // describe the main window
-    let main_window = WindowDesc::new(build_root_widget())
-        .title("SQL Test")
-        .window_size((400.0, 400.0));
-
-    let data = "Hello World".to_string();
-
-    // start the application
-    AppLauncher::with_window(main_window)
-        .launch(data)
-        .expect("Failed to launch application");
+    conn.execute("DELETE FROM users", [])?;
 
     Ok(())
 }
@@ -78,13 +115,16 @@ fn set_conn(database: String) ->  Result<Connection>
     Ok(conn)
 }
 
-
-fn build_root_widget() -> impl Widget<String> {
+fn build_root(conn: Connection) -> impl Widget<()>
+{
     Flex::column()
-        // Add a label widget
-        .with_child(Label::new(|data: &String, _env: &_| data.clone()))
         // Add a button widget to the Flex widget
         .with_child(Button::new("Click me!").on_click(|_, _, _| {
-            println!("Button clicked!");
+            /*conn.execute(
+                "
+                INSERT OR IGNORE INTO users (id, name, email) 
+                VALUES (?1, ?2, ?3)", 
+                (&me.id, &me.name, &me.email)
+            );*/
         }))
 }
