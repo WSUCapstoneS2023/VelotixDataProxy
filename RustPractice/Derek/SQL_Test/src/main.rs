@@ -32,29 +32,34 @@ fn main() -> Result<()> {
     let mut run = true;
     while run
     {
+        // get id input
         println!("Enter an id:");
         let mut id = String::new();
         io::stdin().read_line(&mut id).expect("failed to read line");
         let id = id.trim().parse::<i32>().expect("Invalid input");
         println!("You entered: {}", id);
     
-        // Create a new table named `users`
+
+        // get name input
         println!("Enter a name:");
         let mut name = String::new();
         io::stdin().read_line(&mut name).expect("failed to readline");
         print!("You entered {}", name);
     
+        // get email input
         println!("Enter a email:");
         let mut email = String::new();
         io::stdin().read_line(&mut email).expect("failed to readline");
         print!("You entered {}", email);
     
+        // set user to add
         let me = User {
             id: id,
             name: (&name[..name.len()-2]).to_string(),
             email: (&email[..email.len()-2]).to_string(),
         };
     
+        // insert value to list
         conn.execute(
             "
             INSERT OR IGNORE INTO users (id, name, email) 
@@ -62,10 +67,12 @@ fn main() -> Result<()> {
             (&me.id, &me.name, &me.email)
         )?;
 
+        // checks if user wants to continue adding to database
         let mut input = String::new();
         println!("Enter if you want to keep adding names (enter false to stop)");
         io::stdin().read_line(&mut input).expect("failed to readline");
         
+        // get the input and loops if input is not false
         if input.trim() == "false"
         {
             run = false;
@@ -77,6 +84,7 @@ fn main() -> Result<()> {
     }
     
 
+    // Get all the table information
     let mut stmt = conn.prepare("SELECT id, name, email FROM users")?;
     let person_iter = stmt.query_map([], |row| {
         Ok(User {
@@ -86,6 +94,7 @@ fn main() -> Result<()> {
         })
     })?;
 
+    // get each person in table and print it
     for person in person_iter {
         println!("Found person {:?}", person.unwrap());
     }
