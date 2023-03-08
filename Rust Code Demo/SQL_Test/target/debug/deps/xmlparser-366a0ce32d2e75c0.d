@@ -1,0 +1,11 @@
+C:\Users\Derek\Desktop\VelotixDataProxy\RustPractice\Derek\SQL_Test\target\debug\deps\xmlparser-366a0ce32d2e75c0.rmeta: C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\xmlparser-0.13.5\src\lib.rs C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\xmlparser-0.13.5\src\error.rs C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\xmlparser-0.13.5\src\stream.rs C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\xmlparser-0.13.5\src\strspan.rs C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\xmlparser-0.13.5\src\xmlchar.rs
+
+C:\Users\Derek\Desktop\VelotixDataProxy\RustPractice\Derek\SQL_Test\target\debug\deps\libxmlparser-366a0ce32d2e75c0.rlib: C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\xmlparser-0.13.5\src\lib.rs C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\xmlparser-0.13.5\src\error.rs C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\xmlparser-0.13.5\src\stream.rs C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\xmlparser-0.13.5\src\strspan.rs C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\xmlparser-0.13.5\src\xmlchar.rs
+
+C:\Users\Derek\Desktop\VelotixDataProxy\RustPractice\Derek\SQL_Test\target\debug\deps\xmlparser-366a0ce32d2e75c0.d: C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\xmlparser-0.13.5\src\lib.rs C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\xmlparser-0.13.5\src\error.rs C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\xmlparser-0.13.5\src\stream.rs C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\xmlparser-0.13.5\src\strspan.rs C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\xmlparser-0.13.5\src\xmlchar.rs
+
+C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\xmlparser-0.13.5\src\lib.rs:
+C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\xmlparser-0.13.5\src\error.rs:
+C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\xmlparser-0.13.5\src\stream.rs:
+C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\xmlparser-0.13.5\src\strspan.rs:
+C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\xmlparser-0.13.5\src\xmlchar.rs:

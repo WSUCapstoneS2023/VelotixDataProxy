@@ -1,0 +1,12 @@
+C:\Users\Derek\Desktop\VelotixDataProxy\RustPractice\Derek\SQL_Test\target\debug\deps\tinystr-f6b5a4704b406231.rmeta: C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\tinystr-0.7.1\src\lib.rs C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\tinystr-0.7.1\src\macros.rs C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\tinystr-0.7.1\src\ascii.rs C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\tinystr-0.7.1\src\asciibyte.rs C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\tinystr-0.7.1\src\error.rs C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\tinystr-0.7.1\src\int_ops.rs
+
+C:\Users\Derek\Desktop\VelotixDataProxy\RustPractice\Derek\SQL_Test\target\debug\deps\libtinystr-f6b5a4704b406231.rlib: C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\tinystr-0.7.1\src\lib.rs C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\tinystr-0.7.1\src\macros.rs C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\tinystr-0.7.1\src\ascii.rs C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\tinystr-0.7.1\src\asciibyte.rs C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\tinystr-0.7.1\src\error.rs C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\tinystr-0.7.1\src\int_ops.rs
+
+C:\Users\Derek\Desktop\VelotixDataProxy\RustPractice\Derek\SQL_Test\target\debug\deps\tinystr-f6b5a4704b406231.d: C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\tinystr-0.7.1\src\lib.rs C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\tinystr-0.7.1\src\macros.rs C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\tinystr-0.7.1\src\ascii.rs C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\tinystr-0.7.1\src\asciibyte.rs C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\tinystr-0.7.1\src\error.rs C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\tinystr-0.7.1\src\int_ops.rs
+
+C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\tinystr-0.7.1\src\lib.rs:
+C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\tinystr-0.7.1\src\macros.rs:
+C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\tinystr-0.7.1\src\ascii.rs:
+C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\tinystr-0.7.1\src\asciibyte.rs:
+C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\tinystr-0.7.1\src\error.rs:
+C:\Users\Derek\.cargo\registry\src\github.com-1ecc6299db9ec823\tinystr-0.7.1\src\int_ops.rs:
