@@ -65,12 +65,18 @@ fn mapSum(file: &str) {
     
     let mut children = vec![];
 
-    let data = readEntire(file);
+    //let data = readEntire(file);
+    let data = "86967897737416471853297327050364959
+                11861322575564723963297542624962850
+                70856234701860851907960690014725639
+                38397966707106094172783238747669219
+                52380795257888236525459303330302837
+                58495327135744041048897885734297812
+                69920216438980873548808413720956532
+                16278424637452589860345374828574668";
     //println!("{}", data);
-    let mut chunked_data = String::new();
 
-    chunked_data = data.split_whitespace();
-   
+    let chunked_data = data.split_whitespace();
     let c: String = chunked_data.clone().collect();
     //let cd1 = chunked_data;
 
