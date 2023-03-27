@@ -53,7 +53,10 @@ async fn main() -> Result<()> {
 		println!("record {}", object?);
 	}
 
+	println!("\n\n");
 	Ok(())
+
+	
 }
 
 async fn create_task((ds, ses): &DB, title: &str, priority: i32) -> Result<String> {

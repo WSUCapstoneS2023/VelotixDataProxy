@@ -61,19 +61,35 @@ fn readByLine(file: &str) -> io::Result<()> {
     Ok(())
 }
 
+fn readByEveryOtherLine(file: &str) -> io::Result<()> {
+    let path = Path::new(&file);
+    let display = path.display();
+    let mut file1 = match File::open(&path){
+        Err(why) => panic!("Couldn't open {}: {}", display, why),
+        Ok(file) => file,
+    };
+    let reader = BufReader::new(file1);
+
+    for line in reader.lines() {
+        println!("Line: {}\n", line?);
+    }
+
+    Ok(())
+}
+
 fn mapSum(file: &str) {
     
     let mut children = vec![];
 
     //let data = readEntire(file);
     let data = "86967897737416471853297327050364959
-                11861322575564723963297542624962850
-                70856234701860851907960690014725639
-                38397966707106094172783238747669219
-                52380795257888236525459303330302837
-                58495327135744041048897885734297812
-                69920216438980873548808413720956532
-                16278424637452589860345374828574668";
+            11861322575564723963297542624962850
+            70856234701860851907960690014725639
+            38397966707106094172783238747669219
+            52380795257888236525459303330302837
+            58495327135744041048897885734297812
+            69920216438980873548808413720956532
+            16278424637452589860345374828574668";
     //println!("{}", data);
 
     let chunked_data = data.split_whitespace();
@@ -86,11 +102,10 @@ fn mapSum(file: &str) {
         children.push(thread::spawn(move || -> u32 {
             // Calculate the intermediate sum of this segment:
             let result = data_segment
-                        // iterate over the characters of our segment..
                         .chars()
-                        // .. convert text-characters to their number value..
+                        // .. convert chars to ints
                         .map(|c| c.to_digit(10).expect("should be a digit"))
-                        // .. and sum the resulting iterator of numbers
+                        // .. sum all ints
                         .sum();
 
             // println! locks stdout, so no text-interleaving occurs
