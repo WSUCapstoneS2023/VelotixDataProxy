@@ -13,6 +13,9 @@ use rusqlite::{params, Connection, Result};
 use druid::widget::{Align, Flex, Label, TextBox, Button};
 use druid::{AppLauncher, Data, Env, Lens, LocalizedString, Widget, WindowDesc};
 
+// postgress
+use postgres::{Client, NoTls, Error};
+
 #[derive(Debug)]
 struct User {
     id: i32,
@@ -20,21 +23,25 @@ struct User {
     email: String,
 }
 
-fn main() -> Result<()> {
-    // get all argument of the file
+
+fn main() -> Result<(), Error> {
+    // connect to postgres database
     let args: Vec<String> = env::args().collect();
 
-    // Open a connection to a new or existing SQLite database file
-    let conn = set_conn((&"example.db").to_string())?;
+    // Connect to the database
+    let mut client = Client::connect(
+        "host=localhost user=postgres password=password dbname=test",
+        NoTls,
+    )?;
 
     // create a table if it does not exits in the database file
-    conn.execute(
+    client.execute(
         "CREATE TABLE IF NOT EXISTS users (
                 id              INTEGER PRIMARY KEY,
                 name            TEXT NOT NULL,
                 email           TEXT NOT NULL
-                );",
-        [],
+        );",
+        &[]
     );
     
     if args.len() > 1 
@@ -91,11 +98,9 @@ fn main() -> Result<()> {
                 };
             
                 // insert value to list
-                conn.execute(
-                    "
-                    INSERT OR IGNORE INTO users (id, name, email) 
-                    VALUES (?1, ?2, ?3)", 
-                    (&me.id, &me.name, &me.email)
+                client.execute(
+                    "INSERT INTO users (id, name, email) VALUES ($1, $2, $3) ON CONFLICT DO NOTHING",
+                    &[&me.id, &me.name, &me.email],
                 )?;
                 println!("inserted");
                 i = 0;
@@ -137,11 +142,9 @@ fn main() -> Result<()> {
             };
         
             // insert value to list
-            conn.execute(
-                "
-                INSERT OR IGNORE INTO users (id, name, email) 
-                VALUES (?1, ?2, ?3)", 
-                (&me.id, &me.name, &me.email)
+            client.execute(
+                "INSERT INTO users (id, name, email) VALUES ($1, $2, $3) ON CONFLICT DO NOTHING",
+                &[&me.id, &me.name, &me.email],
             )?;
     
             // checks if user wants to continue adding to database
@@ -161,21 +164,14 @@ fn main() -> Result<()> {
         }
 
     }
-    
 
-    // Get all the table information
-    let mut stmt = conn.prepare("SELECT id, name, email FROM users")?;
-    let person_iter = stmt.query_map([], |row| {
-        Ok(User {
-            id: row.get(0)?,
-            name: row.get(1)?,
-            email: row.get(2)?,
-        })
-    })?;
-
-    // get each person in table and print it
-    for person in person_iter {
-        println!("Found person {:?}", person.unwrap());
+    for row in client.query("SELECT id, name, email FROM users", &[])? {
+        let person = User {
+            id: row.get(0),
+            name: row.get(1),
+            email: row.get(2),
+        };
+        println!("Found person {}", person.name);
     }
 
     // describe the main window
@@ -188,7 +184,7 @@ fn main() -> Result<()> {
         .launch(())
         .expect("Failed to launch application");
 
-    conn.execute("DELETE FROM users", [])?;
+    //client.execute("DELETE FROM users", [])?;
 
     Ok(())
 }
