@@ -44,6 +44,8 @@ fn main() -> Result<(), Error> {
         &[]
     );
     
+    client.execute("DELETE FROM users", &[])?;
+
     if args.len() > 1 
     {
         println!("The first argument is {}", args[1]);
@@ -183,8 +185,6 @@ fn main() -> Result<(), Error> {
     AppLauncher::with_window(main_window)
         .launch(())
         .expect("Failed to launch application");
-
-    //client.execute("DELETE FROM users", [])?;
 
     Ok(())
 }
