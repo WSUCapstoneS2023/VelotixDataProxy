@@ -169,12 +169,12 @@ fn main() -> Result<(), Error> {
         while run
         {
             // get id input
-            println!("Enter an id: (enter false to stop)");
+            println!("Enter an id: (enter 0 to stop)");
             let mut id = String::new();
             io::stdin().read_line(&mut id).expect("failed to read line");
             let id = id.trim().parse::<i32>().expect("Invalid input");
             println!("You entered: {}", id);
-            if (id=="false")
+            if id==0
             {
                 break;
             }
