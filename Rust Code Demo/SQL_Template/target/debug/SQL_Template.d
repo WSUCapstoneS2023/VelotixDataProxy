@@ -1,1 +1,1 @@
-C:\Users\Derek\Desktop\VelotixDataProxy\Rust\ Code\ Demo\SQL_Template\target\debug\SQL_Template.exe: C:\Users\Derek\Desktop\VelotixDataProxy\Rust\ Code\ Demo\SQL_Template\src\main.rs
+/Users/reedhavens/Desktop/Spring-2023/CS421\ -\ Senior\ Project/Project2/VelotixDataProxy/Rust\ Code\ Demo/SQL_Template/target/debug/SQL_Template: /Users/reedhavens/Desktop/Spring-2023/CS421\ -\ Senior\ Project/Project2/VelotixDataProxy/Rust\ Code\ Demo/SQL_Template/src/main.rs

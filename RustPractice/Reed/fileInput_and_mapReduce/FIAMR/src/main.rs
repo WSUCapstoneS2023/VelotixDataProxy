@@ -17,8 +17,9 @@ fn main() {
     //-> io::Result<()> 
 
     readByLine("data.txt");
-    readEntire("data.txt");
+    let s = readEntire("data.txt");
 
+    
     mapSum("data.txt")
     //mapFilter()
 
@@ -87,8 +88,8 @@ fn readByEveryOtherLine(file: &str) -> io::Result<()> {
 fn mapSum(file: &str) {
     
     let mut children = vec![];
+    
 
-    //let data = readEntire(file);
     let data = "86967897737416471853297327050364959
             11861322575564723963297542624962850
             70856234701860851907960690014725639

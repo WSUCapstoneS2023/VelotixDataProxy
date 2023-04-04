@@ -7,3 +7,4 @@ edition = "2021"
 
 [dependencies]
 postgres = "0.19"
+rayon = "1.7.0"
