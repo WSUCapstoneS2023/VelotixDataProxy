@@ -1,0 +1,44 @@
+2
+1
+Derek
+Sadler.Derek@wsu.edu
+3
+1
+reed
+reedhavens@wsu.edu
+4
+1
+Hemendra Kathi
+hk@wsu.edu
+5
+0
+James Bond
+jb@england.com
+6
+0
+mike smith
+m@gmail.com
+7
+0
+Dr. Jon Jones
+JJ@ufc.com
+8
+0
+Sarah Connor
+sc@space.com
+9
+0
+Buzz Aldrin
+ba@nasa.com
+10
+0
+Dr. Subu
+kandaswamy@wsu.edu
+11
+0
+Dr. Kirk Schultz
+president@wsu.edu
+12
+0
+Intern Account
+intern@company.com
