@@ -1,0 +1,10 @@
+/Users/reedhavens/Desktop/Spring-2023/CS421 - Senior Project/Project2/VelotixDataProxy/RustPractice/Reed/mongo/rustMongo/target/debug/deps/lock_api-6f0ab05247ba9a8f.rmeta: /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/lock_api-0.4.9/src/lib.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/lock_api-0.4.9/src/mutex.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/lock_api-0.4.9/src/remutex.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/lock_api-0.4.9/src/rwlock.rs
+
+/Users/reedhavens/Desktop/Spring-2023/CS421 - Senior Project/Project2/VelotixDataProxy/RustPractice/Reed/mongo/rustMongo/target/debug/deps/liblock_api-6f0ab05247ba9a8f.rlib: /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/lock_api-0.4.9/src/lib.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/lock_api-0.4.9/src/mutex.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/lock_api-0.4.9/src/remutex.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/lock_api-0.4.9/src/rwlock.rs
+
+/Users/reedhavens/Desktop/Spring-2023/CS421 - Senior Project/Project2/VelotixDataProxy/RustPractice/Reed/mongo/rustMongo/target/debug/deps/lock_api-6f0ab05247ba9a8f.d: /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/lock_api-0.4.9/src/lib.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/lock_api-0.4.9/src/mutex.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/lock_api-0.4.9/src/remutex.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/lock_api-0.4.9/src/rwlock.rs
+
+/Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/lock_api-0.4.9/src/lib.rs:
+/Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/lock_api-0.4.9/src/mutex.rs:
+/Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/lock_api-0.4.9/src/remutex.rs:
+/Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/lock_api-0.4.9/src/rwlock.rs:

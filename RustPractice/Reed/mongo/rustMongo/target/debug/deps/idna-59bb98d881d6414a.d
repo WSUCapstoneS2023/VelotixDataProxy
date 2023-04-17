@@ -1,0 +1,10 @@
+/Users/reedhavens/Desktop/Spring-2023/CS421 - Senior Project/Project2/VelotixDataProxy/RustPractice/Reed/mongo/rustMongo/target/debug/deps/idna-59bb98d881d6414a.rmeta: /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/idna-0.3.0/src/lib.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/idna-0.3.0/src/punycode.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/idna-0.3.0/src/uts46.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/idna-0.3.0/src/uts46_mapping_table.rs
+
+/Users/reedhavens/Desktop/Spring-2023/CS421 - Senior Project/Project2/VelotixDataProxy/RustPractice/Reed/mongo/rustMongo/target/debug/deps/libidna-59bb98d881d6414a.rlib: /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/idna-0.3.0/src/lib.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/idna-0.3.0/src/punycode.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/idna-0.3.0/src/uts46.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/idna-0.3.0/src/uts46_mapping_table.rs
+
+/Users/reedhavens/Desktop/Spring-2023/CS421 - Senior Project/Project2/VelotixDataProxy/RustPractice/Reed/mongo/rustMongo/target/debug/deps/idna-59bb98d881d6414a.d: /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/idna-0.3.0/src/lib.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/idna-0.3.0/src/punycode.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/idna-0.3.0/src/uts46.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/idna-0.3.0/src/uts46_mapping_table.rs
+
+/Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/idna-0.3.0/src/lib.rs:
+/Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/idna-0.3.0/src/punycode.rs:
+/Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/idna-0.3.0/src/uts46.rs:
+/Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/idna-0.3.0/src/uts46_mapping_table.rs:

@@ -1,0 +1,9 @@
+/Users/reedhavens/Desktop/Spring-2023/CS421 - Senior Project/Project2/VelotixDataProxy/RustPractice/Reed/mongo/rustMongo/target/debug/deps/semver_parser-3cb2dd61d84a641c.rmeta: /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/semver-parser-0.7.0/src/lib.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/semver-parser-0.7.0/src/version.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/semver-parser-0.7.0/src/range.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/semver-parser-0.7.0/src/common.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/semver-parser-0.7.0/src/recognize.rs
+
+/Users/reedhavens/Desktop/Spring-2023/CS421 - Senior Project/Project2/VelotixDataProxy/RustPractice/Reed/mongo/rustMongo/target/debug/deps/semver_parser-3cb2dd61d84a641c.d: /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/semver-parser-0.7.0/src/lib.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/semver-parser-0.7.0/src/version.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/semver-parser-0.7.0/src/range.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/semver-parser-0.7.0/src/common.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/semver-parser-0.7.0/src/recognize.rs
+
+/Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/semver-parser-0.7.0/src/lib.rs:
+/Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/semver-parser-0.7.0/src/version.rs:
+/Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/semver-parser-0.7.0/src/range.rs:
+/Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/semver-parser-0.7.0/src/common.rs:
+/Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/semver-parser-0.7.0/src/recognize.rs:

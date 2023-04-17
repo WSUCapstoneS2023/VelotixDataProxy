@@ -206,7 +206,7 @@ fn insertManualData(client: &mut Client)  -> Result<(), Error>
         // insert value to list
         client.execute(
             "INSERT INTO users (id, level, name, email) VALUES ($1, $2, $3, $4) ON CONFLICT DO NOTHING",
-            &[&me.id, &me.level, &me.name, &me.email],
+            &[&me.id, &me.level, &me.name.trim(), &me.email],
         )?;
 
         // checks if user wants to continue adding to database
@@ -341,7 +341,7 @@ fn main() -> Result<(), Error> {
 
     // Connect to the database required if the program crashes this may be the main error
     let mut client = Client::connect(
-        "host=localhost port=5432 user=postgres password=password dbname=test",
+        "host=localhost port=5433 user=postgres password=password dbname=test",
         NoTls,
     )?;
     

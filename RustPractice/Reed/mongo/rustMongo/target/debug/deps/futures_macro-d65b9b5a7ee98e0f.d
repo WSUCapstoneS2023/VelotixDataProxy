@@ -1,0 +1,9 @@
+/Users/reedhavens/Desktop/Spring-2023/CS421 - Senior Project/Project2/VelotixDataProxy/RustPractice/Reed/mongo/rustMongo/target/debug/deps/libfutures_macro-d65b9b5a7ee98e0f.dylib: /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-macro-0.3.28/src/lib.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-macro-0.3.28/src/executor.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-macro-0.3.28/src/join.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-macro-0.3.28/src/select.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-macro-0.3.28/src/stream_select.rs
+
+/Users/reedhavens/Desktop/Spring-2023/CS421 - Senior Project/Project2/VelotixDataProxy/RustPractice/Reed/mongo/rustMongo/target/debug/deps/futures_macro-d65b9b5a7ee98e0f.d: /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-macro-0.3.28/src/lib.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-macro-0.3.28/src/executor.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-macro-0.3.28/src/join.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-macro-0.3.28/src/select.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-macro-0.3.28/src/stream_select.rs
+
+/Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-macro-0.3.28/src/lib.rs:
+/Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-macro-0.3.28/src/executor.rs:
+/Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-macro-0.3.28/src/join.rs:
+/Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-macro-0.3.28/src/select.rs:
+/Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-macro-0.3.28/src/stream_select.rs:

@@ -1,0 +1,9 @@
+/Users/reedhavens/Desktop/Spring-2023/CS421 - Senior Project/Project2/VelotixDataProxy/RustPractice/Reed/mongo/rustMongo/target/debug/deps/futures_channel-dc6e8d445afba8bf.rmeta: /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.28/src/lib.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.28/src/lock.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.28/src/mpsc/mod.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.28/src/mpsc/queue.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.28/src/oneshot.rs
+
+/Users/reedhavens/Desktop/Spring-2023/CS421 - Senior Project/Project2/VelotixDataProxy/RustPractice/Reed/mongo/rustMongo/target/debug/deps/futures_channel-dc6e8d445afba8bf.d: /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.28/src/lib.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.28/src/lock.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.28/src/mpsc/mod.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.28/src/mpsc/queue.rs /Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.28/src/oneshot.rs
+
+/Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.28/src/lib.rs:
+/Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.28/src/lock.rs:
+/Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.28/src/mpsc/mod.rs:
+/Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.28/src/mpsc/queue.rs:
+/Users/reedhavens/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-channel-0.3.28/src/oneshot.rs:
