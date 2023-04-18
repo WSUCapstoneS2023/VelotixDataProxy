@@ -11,3 +11,5 @@ bson = { version = "2", features = ["chrono-0_4"] } # Needed for using chrono da
 tokio = "1"
 chrono = "0.4" 
 serde = "1" 
+rayon = "1.7.0"
+futures = "0.3.28"
