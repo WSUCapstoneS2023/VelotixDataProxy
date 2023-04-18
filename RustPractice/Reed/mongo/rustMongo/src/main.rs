@@ -45,22 +45,12 @@ async fn main() -> Result<(), Box<dyn Error>> {
 
     let v: Vec<_> = cursor.try_collect().await?;
 
-
-   
-
     let mut plotV: Vec<String> = Vec::new();
 
     for movie in v.iter() {
         tokenize(movie, &mut plotV)
     }
-
-    for item in plotV.iter() {
-        println!("Printing item: {}", item);
-    }
-
-
-
-   
+    
 
 
     let insert_result = movies.insert_one(new_doc.clone(), None).await?;
@@ -109,18 +99,22 @@ async fn main() -> Result<(), Box<dyn Error>> {
         }
     }
 
-
-
    Ok(())
 }
 
 fn tokenize(movie: &Document, mut plotV: &mut Vec<String>) {
     let plot = movie.get_str("plot");
-    
+
     match plot {
         Ok(v) => plotV.push(v.to_string()),
-        Err(e) => println!("Error: VAE"),
+        Err(e) => println!(""),
     }
     
-
 }
+
+//set MONGODB_URI='mongodb+srv://reedhavens:reedhavens@rustquickstart-123ab.mongodb.net/test?retryWrites=true&w=majority'
+
+//mongoDB login
+//email: reed.havens@wsu.edu
+//password: @Kendall1
+//need to do: add IP address
